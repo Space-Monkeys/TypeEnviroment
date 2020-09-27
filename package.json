@@ -1,0 +1,40 @@
+{
+  "name": "githook",
+  "version": "1.0.0",
+  "description": "consumption of the github notifications api",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "dev": "nodemon src/server.ts",
+    "build": "sucrase ./src -d ./dist  --transforms  typescript,imports"
+  },
+  "keywords": [
+    "web",
+    "hook",
+    "github",
+    "spacemonkeys"
+  ],
+  "author": "Spacemonkeys",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "^2.1.2",
+    "sucrase": "^3.15.0",
+    "typescript": "^4.0.3"
+  }
+}
